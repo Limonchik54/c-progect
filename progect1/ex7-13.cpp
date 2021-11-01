@@ -1,9 +1,9 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 int check(int lenght) {
     while (lenght <= 0) {
-        cout << "Êàêîé â ýòîì ñìûñë?!" << endl;
+        cout << "ÐšÐ°ÐºÐ¾Ð¹ Ð² ÑÑ‚Ð¾Ð¼ ÑÐ¼Ñ‹ÑÐ»?!" << endl;
         cin >> lenght;
     }
     return lenght;
@@ -16,29 +16,29 @@ int main()
     char symb;
 
 
-    cout << "Ãåîìåòðè÷åñêèå ôèãóðû" << endl;
-    cout << "Âûáåðèòå ôèãóðó: " << endl;
-    cout << "[1] - Ëèíèÿ" << endl;
-    cout << "[2] - Êâàäðàò" << endl;
-    cout << "[3] - Ïðÿìîóãîëüíèê" << endl;
-    cout << "[4] - Òðåóãîëüíèê" << endl;
-    cout << "[5] - Ðåøåòêà" << endl;
-    cout << "[6] - Êîñîé êðåñò" << endl;
-    cout << "[7] - Ïëþñèê" << endl;
+    cout << "Ð“ÐµÐ¾Ð¼ÐµÑ‚Ñ€Ð¸Ñ‡ÐµÑÐºÐ¸Ðµ Ñ„Ð¸Ð³ÑƒÑ€Ñ‹" << endl;
+    cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ñ„Ð¸Ð³ÑƒÑ€Ñƒ: " << endl;
+    cout << "[1] - Ð›Ð¸Ð½Ð¸Ñ" << endl;
+    cout << "[2] - ÐšÐ²Ð°Ð´Ñ€Ð°Ñ‚" << endl;
+    cout << "[3] - ÐŸÑ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº" << endl;
+    cout << "[4] - Ð¢Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº" << endl;
+    cout << "[5] - Ð ÐµÑˆÐµÑ‚ÐºÐ°" << endl;
+    cout << "[6] - ÐšÐ¾ÑÐ¾Ð¹ ÐºÑ€ÐµÑÑ‚" << endl;
+    cout << "[7] - ÐŸÐ»ÑŽÑÐ¸Ðº" << endl;
     cin >> menu;
     short  i = 0;
     switch (menu)
     {
 
     case 1:
-        cout << "Ââåäèòå äëèíó ëèíèè" << endl;
+        cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð»Ð¸Ð½Ñƒ Ð»Ð¸Ð½Ð¸Ð¸" << endl;
         cin >> lenght;
         lenght = check(lenght);
         cout << endl;
-        cout << "Ââåäèòå òèï ëèíèè:\n [1] - ãîðèçîíòàëüíàÿ\n [2] - âåðòèêàëüíàÿ" << endl;
+        cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚Ð¸Ð¿ Ð»Ð¸Ð½Ð¸Ð¸:\n [1] - Ð³Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°Ð»ÑŒÐ½Ð°Ñ\n [2] - Ð²ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»ÑŒÐ½Ð°Ñ" << endl;
         cin >> vector;
         cout << endl;
-        cout << "Ââåäèòå òåêñòóðó ëèíèè" << endl << endl;
+        cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐºÑÑ‚ÑƒÑ€Ñƒ Ð»Ð¸Ð½Ð¸Ð¸" << endl << endl;
         cin >> symb;
 
 
@@ -62,19 +62,19 @@ int main()
         }
               break;
         default: {
-            cout << "èñïðàâü äàííûå è ïîïðîáóé ñíîâà" << endl;
+            cout << "Ð¸ÑÐ¿Ñ€Ð°Ð²ÑŒ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¸ Ð¿Ð¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹ ÑÐ½Ð¾Ð²Ð°" << endl;
         }
                break;
         }
         break;
     case 2: {
 
-        cout << "Ââåäèòå äëèíó ðåáðà êâàäðàòà" << endl << endl;
+        cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð»Ð¸Ð½Ñƒ Ñ€ÐµÐ±Ñ€Ð° ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð°" << endl << endl;
         cin >> lenght;
         lenght = check(lenght);
-        cout << "Ââåäèòå òåêñòóðó êâàäðàòà" << endl << endl;
+        cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐºÑÑ‚ÑƒÑ€Ñƒ ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð°" << endl << endl;
         cin >> symb;
-        cout << "Âûáåðèòå òèï\n [1] Çàïîëíåííûé\n [2] Ïóñòîé" << endl << endl;
+        cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ñ‚Ð¸Ð¿\n [1] Ð—Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð½Ñ‹Ð¹\n [2] ÐŸÑƒÑÑ‚Ð¾Ð¹" << endl << endl;
         cin >> choise;
         switch (choise)
         {
@@ -123,7 +123,7 @@ int main()
             break;
         }
         default:
-            cout << "èñïðàâü äàííûå è ïîïðîáóé ñíîâà" << endl;
+            cout << "Ð¸ÑÐ¿Ñ€Ð°Ð²ÑŒ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¸ Ð¿Ð¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹ ÑÐ½Ð¾Ð²Ð°" << endl;
             break;
 
         }
@@ -132,17 +132,17 @@ int main()
     case 3: {
         int width;
 
-        cout << "ââåäèòå äëèíó ïðÿìîóãîëüíèêà" << endl;
+        cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð»Ð¸Ð½Ñƒ Ð¿Ñ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°" << endl;
         cin >> lenght;
         lenght = check(lenght);
         cout << endl;
-        cout << "ââåäèòå øèðèíó ïðÿìîóãîëüíèêà" << endl;
+        cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑˆÐ¸Ñ€Ð¸Ð½Ñƒ Ð¿Ñ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°" << endl;
         cin >> width;
         width = check(width);
         cout << endl;
-        cout << "ââåäèòå òåêñòóðó ïðÿìîóãîëüíèêà" << endl << endl;
+        cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐºÑÑ‚ÑƒÑ€Ñƒ Ð¿Ñ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°" << endl << endl;
         cin >> symb;
-        cout << "Âûáåðèòå òèï\n [1] Çàïîëíåííûé\n [2] Ïóñòîé" << endl << endl;
+        cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ñ‚Ð¸Ð¿\n [1] Ð—Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð½Ñ‹Ð¹\n [2] ÐŸÑƒÑÑ‚Ð¾Ð¹" << endl << endl;
         cin >> choise;
 
 
@@ -194,7 +194,7 @@ int main()
         }
 
         default: {
-            cout << "èñïðàâü äàííûå è ïîïðîáóé ñíîâà" << endl;
+            cout << "Ð¸ÑÐ¿Ñ€Ð°Ð²ÑŒ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¸ Ð¿Ð¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹ ÑÐ½Ð¾Ð²Ð°" << endl;
         }
                break;
 
@@ -205,12 +205,12 @@ int main()
     case 4: {
         int hight, begin, finish;
 
-        cout << "ââåäèòå âûñîòó òðåóãîëüíèêà" << endl;
+        cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‹ÑÐ¾Ñ‚Ñƒ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°" << endl;
         cin >> hight;
         hight = check(hight);
-        cout << "ââåäèòå òåêñòóðó òðåóãîëüíèêà" << endl << endl;
+        cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐºÑÑ‚ÑƒÑ€Ñƒ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°" << endl << endl;
         cin >> symb;
-        cout << "Âûáåðèòå òèï\n [1] Çàïîëíåííûé\n [2] Ïóñòîé" << endl << endl;
+        cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ñ‚Ð¸Ð¿\n [1] Ð—Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð½Ñ‹Ð¹\n [2] ÐŸÑƒÑÑ‚Ð¾Ð¹" << endl << endl;
         cin >> choise;
         lenght = hight * 2 - 1;
         begin = hight;
@@ -261,7 +261,7 @@ int main()
               break;
 
         default: {
-            cout << "èñïðàâü äàííûå è ïîïðîáóé ñíîâà" << endl;
+            cout << "Ð¸ÑÐ¿Ñ€Ð°Ð²ÑŒ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¸ Ð¿Ð¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹ ÑÐ½Ð¾Ð²Ð°" << endl;
         }
 
 
@@ -274,13 +274,13 @@ int main()
     }
           break;
     case 5: {
-        cout << "ââåäèòå äëèíó ðåáðà" << endl;
+        cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð»Ð¸Ð½Ñƒ Ñ€ÐµÐ±Ñ€Ð°" << endl;
         cin >> lenght;
         lenght = check(lenght);
         if (lenght % 2 == 0) {
             lenght++;
         }
-        cout << "ââåäèòå òåêñòóðó ðåøåòêè" << endl << endl;
+        cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐºÑÑ‚ÑƒÑ€Ñƒ Ñ€ÐµÑˆÐµÑ‚ÐºÐ¸" << endl << endl;
         cin >> symb;
 
         while (i < lenght) {
@@ -306,11 +306,11 @@ int main()
     }
           break;
     case 6: {
-        cout << "ââåäèòå øèðèíó ïîëÿ äëÿ äèàãîíàëè" << endl;
+        cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑˆÐ¸Ñ€Ð¸Ð½Ñƒ Ð¿Ð¾Ð»Ñ Ð´Ð»Ñ Ð´Ð¸Ð°Ð³Ð¾Ð½Ð°Ð»Ð¸" << endl;
         int lenght;
         cin >> lenght;
         lenght = check(lenght);
-        cout << "ââåäèòå òåêñòóðó äèàãîíàëè" << endl << endl;
+        cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐºÑÑ‚ÑƒÑ€Ñƒ Ð´Ð¸Ð°Ð³Ð¾Ð½Ð°Ð»Ð¸" << endl << endl;
         cin >> symb;
         int hight;
         hight = lenght;
@@ -341,7 +341,7 @@ int main()
     }
           break;
     case 7: {
-        cout << "ââåäèòå äëèíó ïëþñèêà" << endl;
+        cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð»Ð¸Ð½Ñƒ Ð¿Ð»ÑŽÑÐ¸ÐºÐ°" << endl;
         cin >> lenght;
         lenght = check(lenght);
         if (lenght % 2 == 0) {
@@ -349,7 +349,7 @@ int main()
         }
         int center;
         center = (lenght / 2);
-        cout << "ââåäèòå òåêñòóðó" << endl << endl;
+        cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐºÑÑ‚ÑƒÑ€Ñƒ" << endl << endl;
         cin >> symb;
 
         while (i < lenght) {
@@ -374,7 +374,7 @@ int main()
     }
           break;
     default:
-        cout << "èñïðàâü äàííûå è ïîïðîáóé ñíîâà" << endl;
+        cout << "Ð¸ÑÐ¿Ñ€Ð°Ð²ÑŒ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¸ Ð¿Ð¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹ ÑÐ½Ð¾Ð²Ð°" << endl;
         break;
     }
 
